@@ -1,0 +1,835 @@
+@font-face {
+  font-family: "FUTURA";
+  src: url("../fonts/frensh/FUTURASTD-MEDIUM.OTF");
+}
+@font-face {
+  font-family: "FUTURA-BOLD";
+  src: url("../fonts/frensh/FUTURASTD-BOLD_0.OTF");
+}
+
+@font-face {
+  font-family: "nature_bueaty";
+  src: url("../fonts/frensh/Nature_Beauty_Personal_Use.ttf");
+}
+@font-face {
+  font-family: "garden";
+  src: url("../fonts/frensh/Garden_Marker.otf");
+}
+
+.row {
+  --bs-gutter-x: 0px;
+  --bs-gutter-y: 0;
+}
+:root {
+  --primary-color: #e01e8e;
+}
+
+header {
+  z-index: 99;
+  position: relative;
+}
+
+.content_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 42px;
+}
+.menu {
+  margin-right: 116px;
+}
+.menu li a {
+  color: var(--primary-color);
+}
+.menu li a.active {
+  color: var(--primary-color);
+  font-weight: bold;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logo img {
+  width: 300px;
+}
+.first_section {
+  height: 540px;
+  width: 100%;
+  background-image: url(../images/svg_properiod/hands.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  z-index: 99;
+  position: relative;
+}
+
+.info_first_sct {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.info_first_sct h1 {
+  font-family: "nature_bueaty";
+  font-size: 50px;
+  color: var(--primary-color);
+  margin-top: -47px;
+  margin-left: 100px;
+}
+.info_first_sct span {
+  font-family: "nature_bueaty";
+  font-size: 70px;
+  flex-wrap: nowrap;
+  display: flex;
+  padding: 0px 0px 0px;
+  position: relative;
+  top: -16px;
+  white-space: nowrap;
+}
+
+.sign_fimin {
+  width: 70px;
+  margin-left: 20px;
+}
+.sign_excla {
+  width: 30px;
+  margin-left: 20px;
+}
+
+.assemble_head_firstsc {
+  position: relative;
+  background: rgb(255, 255, 255);
+  background: -moz-linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(221, 206, 224, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(221, 206, 224, 1) 100%
+  );
+  background: linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(221, 206, 224, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#ddcee0",GradientType=1);
+  overflow: hidden;
+}
+.assemble_head_firstsc::before {
+  content: "";
+  width: 500px;
+  height: 500px;
+  background-image: url(../images/svg_properiod/dotted.svg);
+  background-repeat: no-repeat;
+  position: absolute !important;
+  top: -137px;
+  left: -146px;
+  transform: rotate(-17deg);
+}
+.assemble_head_firstsc::after {
+  content: "";
+  width: 500px;
+  height: 500px;
+  background-image: url(../images/svg_properiod/dotted_claire.svg);
+  background-repeat: no-repeat;
+  position: absolute !important;
+  bottom: 94px;
+  right: -175px;
+  transform: rotate(230deg);
+}
+.bg-first-sc {
+  display: flex;
+  /* background-image: url("../images/bg1.jpg"); */
+  width: 100%;
+  height: 619px;
+}
+
+.head-section h2 {
+  font-size: 30px;
+  font-family: "nature_bueaty";
+  color: var(--primary-color);
+}
+.head-section h2 {
+  margin-bottom: 25px;
+}
+/* section 2 */
+.carton_section .head-section {
+  margin-top: 77px;
+}
+
+.carton_section .head-section h2 {
+  font-family: "nature_bueaty";
+  font-size: 45px;
+  color: var(--primary-color);
+}
+/* .head-section::after {
+  content: "";
+  height: 10px;
+  width: 300px;
+  position: absolute;
+  border: #92348e;
+  border-width: 5px;
+  border-spacing: 10cm;
+  border-style: dashed;
+  border-bottom: 0;
+  border-left: 0;
+  border-right: 0;
+} */
+
+.paragraph {
+  text-align: justify;
+  font-family: "FUTURA";
+  color: var(--primary-color);
+  font-size: 20px;
+}
+
+.carton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.carton img {
+  width: 490px;
+  z-index: 1;
+}
+
+.chat-design {
+  width: 80%;
+  border: 10px solid var(--primary-color);
+  border-radius: 20px;
+  padding: 40px;
+  position: relative;
+}
+.chat-design::before {
+  content: "";
+  background: white url("../images/svg_properiod/left-quote-svgrepo-com.svg");
+  background-size: 50px 50px;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  height: 50px;
+  width: 70px;
+  top: -30px;
+}
+
+.chat-design::after {
+  content: "";
+  background: white url("../images/svg_properiod/left-quote-svgrepo-com.svg");
+  background-size: 50px 50px;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  height: 50px;
+  width: 70px;
+  bottom: -30px;
+  right: 30px;
+  transform: rotate(180deg);
+}
+.chat-design p {
+  font-family: "FUTURA";
+  color: var(--primary-color);
+  font-size: 20px;
+}
+.notice {
+  font-family: "FUTURA";
+  color: var(--primary-color);
+  font-size: 16px;
+  margin-top: 30px;
+}
+
+.all-rec {
+  position: absolute;
+  bottom: 0px;
+  right: 250px;
+}
+.rectangle {
+  position: absolute;
+  background-color: #ffffff00;
+  width: 50px;
+  height: 61px;
+  border-width: 13px 10px 10px 10px;
+  border-style: solid;
+  border-color: #ffffff #ffffff00 #ffffff00 #e01e8e;
+}
+.line {
+  width: 50px;
+  height: 89.5px;
+  border-width: 11px;
+  border-style: solid;
+  border-color: #ffffff00 #ffffff00 #ffffff00 #e01e8e;
+  display: block;
+  transform: rotate(227deg);
+  position: absolute;
+  top: -31px;
+  left: -9px;
+}
+section {
+  position: relative;
+}
+.decorecircle {
+  width: 500px;
+  height: 500px;
+  position: absolute;
+  top: -160px;
+  left: -120px;
+  background-image: url(../images/svg_properiod/dotted.svg);
+  background-repeat: no-repeat;
+}
+
+.all-content {
+  display: flex;
+  flex-direction: column;
+  grid-gap: 115px;
+  margin: 90px 0 0 0;
+}
+.carton_section {
+  margin: 0 40px;
+}
+.conseil_section {
+  position: relative;
+  z-index: 9;
+}
+.slide_section {
+  position: relative;
+  z-index: 9;
+  margin: 0 55px;
+  padding: 62px 0 73px;
+  background: #ffe8f5;
+}
+.carousel-control-prev {
+  position: absolute;
+}
+.carousel-control-next {
+  position: absolute;
+}
+.carousel-inner {
+  position: inherit;
+}
+.carousel {
+  position: initial;
+}
+.all_slide {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  padding: 0 0 62px;
+}
+.carousel-indicators [data-bs-target] {
+  width: 32px;
+  height: 8px;
+  background-color: #e01e8e;
+  border: 0;
+  border-radius: 13px;
+}
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+  display: inline-block;
+  width: 4rem;
+  height: 4rem;
+  background-repeat: no-repeat;
+  background-size: 50% 50%;
+  background-color: #e01e8e;
+  border-radius: 50%;
+}
+.carousel-control-next-icon {
+  background-position: 55%;
+}
+.carousel-control-prev-icon {
+  background-position: 45%;
+}
+.women_section,
+.conseil_section {
+  margin: 0 55px;
+  background: #ffe8f5;
+}
+.first_div_women {
+  display: flex;
+  width: 50%;
+  align-items: center;
+  justify-content: center;
+  padding: 50px;
+}
+.second_div_women {
+  padding: 90px 70px 80px 70px;
+  display: flex;
+  justify-content: center;
+}
+.second_div_old_women {
+  padding: 90px 100px 90px 100px;
+}
+.bg_colored .path {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+}
+
+.path_section .bg_colored {
+  padding: 30px 89px 0px 95px;
+  overflow: hidden;
+}
+.path_section .head-section{
+  margin-bottom: 58px;
+}
+
+.exlamative {
+  font-family: "Ubuntu", sans-serif;
+}
+.img_path {
+  padding: 40px 118px 40px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.girl_section .bg_colored {
+  position: relative;
+  padding: 32px 80px 0px 95px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.path_section .bg_colored {
+  position: relative;
+}
+
+.girl_section .head-section-white h2 {
+  color: white;
+}
+
+.girl_img {
+  display: flex;
+  justify-content: center;
+}
+.girl_img img {
+  width: 85%;
+}
+.paragraph ul {
+  margin-top: 10px;
+  font-weight: bold;
+}
+.women {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.circle-women {
+  border-radius: 50%;
+
+  display: flex;
+  justify-content: center;
+  position: relative;
+  width: 66%;
+}
+.image_women {
+  width: 284px;
+}
+.women .bulles img,
+.women .bulles_two img {
+  height: 82%;
+}
+.bulles,
+.bulles_two {
+  display: flex;
+  position: absolute;
+  height: 120px;
+  width: 100%;
+  top: -83px;
+  right: -8px;
+}
+.bulles {
+  justify-content: space-evenly;
+}
+
+.bulles_two {
+  top: 30px;
+  justify-content: space-between;
+}
+
+/* conseil_section */
+.old_women {
+  width: 80%;
+  padding-top: 41px;
+}
+/* .old_women img{
+  width: 400px;
+} */
+.first_div_old_women {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  background-color: var(--primary-color);
+  color: white;
+  font-family: "FUTURA";
+  font-size: 20px;
+  height: 55px;
+  align-items: center;
+}
+footer p {
+  margin: 0;
+}
+
+.menu_mobile {
+  display: none;
+}
+.div_notice_desk {
+  display: block;
+  text-align: center;
+}
+.div_notice_mobile {
+  display: none;
+}
+
+.slide {
+  width: 40%;
+  border-radius: 17px;
+  overflow: hidden;
+}
+.carousel-control-next {
+  display: block;
+  right: 20px;
+}
+.carousel-control-prev {
+  left: 20px;
+  display: block;
+}
+.footer_slide .carousel-control-next {
+  display: none;
+  right: 20px;
+}
+.footer_slide .carousel-control-prev {
+  left: 20px;
+  display: none;
+}
+
+
+.ma_para_all {
+  text-align: center;
+  background: #f5cad0;
+  border-radius: 18px;
+  padding: 20px 50px;
+  margin: 16px 0;
+}
+.ma_header_titre {
+  font-size: 20px;
+  font-family: "FUTURA-BOLD";
+  color: var(--primary-color);
+  margin: 0px !important;
+}
+.ma_paragraph {
+  text-align: center;
+  font-family: "FUTURA";
+  color: var(--primary-color);
+  margin-bottom: 0 !important;
+  font-size: 18px;
+}
+.ma_ul_style {
+  list-style: auto;
+}
+.ma_span_list {
+  font-size: 16px;
+  font-weight: 300;
+}
+.ma_para_all_2 {
+  background: #f5cad0;
+  border-radius: 18px;
+  padding: 25px;
+  margin: 100px 70px;
+}
+.ma_paragraph_2 {
+  text-align: left;
+  font-family: "FUTURA";
+  color: var(--primary-color);
+  margin-bottom: 0 !important;
+  font-size: 20px;
+}
+.ma_li_list {
+  font-size: 20px;
+  font-weight: 900;
+}
+.ma_span_titre {
+  font-size: 25px;
+  font-family: "FUTURA-BOLD";
+}
+.paragraphs_bg{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 30px 89px 0px 95px;
+}
+.second_div_women img{
+  width: 323px;
+}
+
+
+/* media for mobile */
+
+@media screen and (max-width: 640px) {
+  .all-content {
+    grid-gap: 70px;
+    overflow: hidden;
+    padding: 171px 0 0 0;
+    margin: -89px 0 0 0;
+  }
+  .menu_mobile {
+    display: inline;
+  }
+  .content_header {
+    padding: 12px 18px 0 0;
+    margin-top: 0px;
+  }
+
+  .assemble_head_firstsc::before {
+    content: "";
+    width: 300px;
+    height: 300px;
+    background-image: url(../images/svg_properiod/dotted.svg);
+    background-repeat: no-repeat;
+    position: absolute !important;
+    top: 0px;
+    left: -52px;
+    transform: rotate(-17deg);
+  }
+  .assemble_head_firstsc::after {
+    content: "";
+    width: 300px;
+    height: 300px;
+    background-image: url(../images/svg_properiod/dotted_claire.svg);
+    background-repeat: no-repeat;
+    position: absolute !important;
+    bottom: 55px;
+    right: -76px;
+    transform: rotate(226deg);
+  }
+  .menu {
+    display: none;
+  }
+  .btn_menu .fa-bars {
+    font-size: 33px;
+    color: var(--primary-color);
+  }
+
+  .info_first_sct {
+    text-align: center;
+    align-items: flex-start;
+    margin-top: 71px;
+  }
+
+  .info_first_sct h1 {
+    font-size: 40px;
+    margin-top: 0px;
+    margin-left: 0px;
+  }
+  .sign_fimin {
+    width: 40px;
+    margin-left: -19px;
+  }
+  .info_first_sct span {
+    font-size: 50px;
+    justify-content: center;
+  }
+  .sign_excla {
+    width: 25px;
+    margin-left: 10px;
+  }
+  .info_first_sct span {
+    top: -3px;
+  }
+  .bg-first-sc {
+    height: 750px;
+  }
+  .bg-first-sc {
+    justify-content: center;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  .first_section {
+    height: 414px;
+  }
+  .logo {
+    display: flex;
+    justify-content: start;
+    padding: 22px;
+  }
+  .logo img {
+    width: 250px;
+  }
+
+  /* carton section */
+  .first_div_carton {
+    order: 2;
+    margin-top: 20px;
+  }
+  .second_div_carton {
+    order: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .all-rec {
+    position: absolute;
+    top: inherit;
+    bottom: 1px;
+    transform: rotate(0deg);
+    left: 22px;
+  }
+  .chat-design {
+    width: 92%;
+  }
+  .div_notice_desk {
+    display: none;
+  }
+  .div_notice_mobile {
+    display: block;
+    order: 3;
+  }
+  .decorecircle {
+    width: 300px;
+    height: 300px;
+    top: -124px;
+    left: -110px;
+  }
+
+  .carton_section .head-section {
+    order: 3;
+    margin-bottom: 12px;
+  }
+  .head-section h2 {
+    font-size: 25px;
+    line-height: 40px;
+  }
+  .carton_section .head-section h2 {
+    font-size: 28px;
+  }
+  .notice {
+    text-align: center;
+  }
+
+  .carton img {
+    width: 490px;
+    z-index: 1;
+  }
+
+  .carton_section,
+  .women_section {
+    margin: 0 24px;
+  }
+
+  .path_section .bg_colored,
+  .girl_section .bg_colored {
+    padding: 30px;
+  }
+  .head-section {
+    padding: 0px;
+    position: relative;
+  }
+
+  .img_path {
+    padding: 40px;
+  }
+  .path_section .head-section h2 {
+    font-family: "nature_bueaty";
+    font-size: 25px;
+  }
+  .women_section,
+  .conseil_section {
+    margin: 0 20px;
+  }
+  .circle-women {
+    width: 80%;
+  }
+  .first_div_women {
+    order: 2;
+    margin-top: 18px;
+    width: 100%;
+    padding: 30px !important;
+  }
+  .women .bulles img,
+  .women .bulles_two img {
+    height: 70%;
+  }
+  .second_div_women {
+    order: 1;
+    padding: 90px 51px 0px;
+  }
+
+  .first_div_old_women {
+    order: 2;
+    margin-top: 27px;
+  }
+  .second_div_old_women {
+    order: 1;
+  }
+  .second_div_old_women {
+    padding: 20px 25px;
+  }
+  .old_women {
+    width: 90%;
+    padding-top: 0px;
+  }
+  footer {
+    font-size: 16px;
+  }
+
+  .btns_lng {
+    display: flex;
+    justify-content: space-between;
+  }
+  .btn_lang {
+    width: 50%;
+    text-align: center;
+    border: 1px solid var(--primary-color);
+    padding: 12px;
+    text-decoration: none;
+    color: var(--primary-color);
+    font-family: "FUTURA";
+  }
+
+  .slide_section {
+    margin: 0 32px;
+  }
+  .slide {
+    width: 90%;
+  }
+  .carousel-control-next {
+    display: none;
+  }
+  .carousel-control-prev {
+    display: none;
+  }
+  .footer_slide {
+    position: relative;
+    bottom: -77px;
+  }
+  .footer_slide .carousel-control-next {
+    display: block;
+    right: 23px;
+    top: -87px;
+  }
+  .footer_slide .carousel-control-prev {
+    left: 10px;
+    display: block;
+    top: -87px;
+  }
+
+  .paragraphs_bg{
+    padding: 0 20px;
+  }
+  .ma_para_all_2 {
+    background: #f5cad0;
+    border-radius: 18px;
+    padding: 25px;
+    margin: 0px 35px;
+} 
+}
