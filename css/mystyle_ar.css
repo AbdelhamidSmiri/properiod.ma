@@ -1,19 +1,19 @@
 @font-face {
   font-family: "FUTURA";
-  src: url("../fonts/frensh/FUTURASTD-MEDIUM.OTF");
+  src: url("../fonts/arabic/FRUTIGERLTARABIC-45LIGHT.TTF");
 }
 @font-face {
   font-family: "FUTURA-BOLD";
-  src: url("../fonts/frensh/FUTURASTD-BOLD_0.OTF");
+  src: url("../fonts/arabic/FRUTIGERLTARABIC-55ROMAN.TTF");
 }
 
 @font-face {
   font-family: "nature_bueaty";
-  src: url("../fonts/frensh/Nature_Beauty_Personal_Use.ttf");
+  src: url("/fonts/arabic/FRUTIGERLTARABIC-65BOLD.TTF");
 }
 @font-face {
   font-family: "garden";
-  src: url("../fonts/frensh/Garden_Marker.otf");
+  src: url("/fonts/arabic/FRUTIGERLTARABIC-75BLACK.TTF");
 }
 
 .row {
@@ -66,7 +66,7 @@ header {
 
 .info_first_sct {
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
   height: 100%;
 }
@@ -90,11 +90,12 @@ header {
 
 .sign_fimin {
   width: 70px;
-  margin-left: 20px;
+  margin-right: 20px;
 }
 .sign_excla {
   width: 30px;
-  margin-left: 20px;
+  margin-right: 20px;
+  transform: rotateY(180deg);
 }
 
 .assemble_head_firstsc {
@@ -158,8 +159,11 @@ header {
 /* section 2 */
 .carton_section .head-section {
   margin-top: 77px;
+  text-align: right;
 }
-
+.carton_section .ta-c{
+  text-align: center;
+}
 .carton_section .head-section h2 {
   font-family: "nature_bueaty";
   font-size: 45px;
@@ -184,6 +188,7 @@ header {
   font-family: "FUTURA";
   color: var(--primary-color);
   font-size: 20px;
+  direction: rtl;
 }
 
 .carton {
@@ -232,12 +237,14 @@ header {
   font-family: "FUTURA";
   color: var(--primary-color);
   font-size: 20px;
+  text-align: right;
 }
 .notice {
   font-family: "FUTURA";
   color: var(--primary-color);
   font-size: 16px;
   margin-top: 30px;
+  direction: rtl;
 }
 
 .all-rec {
@@ -349,11 +356,9 @@ section {
   display: flex;
   width: 50%;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: center;
   padding: 50px;
-}
-.first_div_women .paragraph .span-first{
-  text-wrap: nowrap;
+  direction: rtl;
 }
 .second_div_women {
   padding: 90px 70px 80px 70px;
@@ -397,6 +402,7 @@ section {
 
 .path_section .bg_colored {
   position: relative;
+  direction: rtl;
 }
 
 .girl_section .head-section-white h2 {
@@ -484,13 +490,9 @@ footer p {
 .menu_mobile {
   display: none;
 }
-.notice_head{
-  width: 579px;
-}
 .div_notice_desk {
   display: block;
   text-align: center;
-
 }
 .div_notice_mobile {
   display: none;
@@ -525,6 +527,10 @@ footer p {
   border-radius: 18px;
   padding: 20px 50px;
   margin: 16px 0;
+  direction: rtl;
+}
+.ma_section{
+  direction: rtl;
 }
 .ma_header_titre {
   font-size: 20px;
@@ -546,18 +552,23 @@ footer p {
   font-size: 16px;
   font-weight: 300;
 }
+.notice_head{
+  width: 579px;
+}
+
 .ma_para_all_2 {
   background: #f5cad0;
   border-radius: 18px;
   padding: 25px;
-  margin: 100px 70px;
+  margin: 57px 70px;
 }
 .ma_paragraph_2 {
-  text-align: left;
+  text-align: right;
   font-family: "FUTURA";
   color: var(--primary-color);
   margin-bottom: 0 !important;
   font-size: 20px;
+  direction: rtl;
 }
 .ma_li_list {
   font-size: 20px;
@@ -573,10 +584,19 @@ footer p {
   flex-direction: column;
   padding: 30px 89px 0px 95px;
 }
+.image_circle{
+  display: flex;
+
+}
+.image_circle img{
+  width: 100%;
+}
+.image_tagline{
+  width: 80%;
+}
 .second_div_women img{
   width: 400px;
 }
-
 
 /* media for mobile */
 
@@ -591,8 +611,9 @@ footer p {
     display: inline;
   }
   .content_header {
-    padding: 12px 18px 0 0;
+    padding: 12px 0 0 18px;
     margin-top: 0px;
+    direction: rtl;
   }
 
   .assemble_head_firstsc::before {
@@ -628,6 +649,7 @@ footer p {
   .info_first_sct {
     text-align: center;
     align-items: flex-start;
+    justify-content: center;
     margin-top: 71px;
   }
 
@@ -638,7 +660,7 @@ footer p {
   }
   .sign_fimin {
     width: 40px;
-    margin-left: -19px;
+    margin-right: -19px;
   }
   .info_first_sct span {
     font-size: 40px;
@@ -732,6 +754,12 @@ footer p {
   .women_section {
     margin: 0 24px;
   }
+  .path_section .bg_colored {
+    order: -1;
+  }
+  .notice_head {
+    width: auto;
+}
 
   .path_section .bg_colored,
   .girl_section .bg_colored {
@@ -761,9 +789,6 @@ footer p {
     margin-top: 18px;
     width: 100%;
     padding: 30px !important;
-  }
-  .first_div_women .paragraph .span-first{
-    text-wrap: wrap;
   }
   .women .bulles img,
   .women .bulles_two img {
